@@ -3,7 +3,7 @@ import datetime
 from io import StringIO
 from flask import Flask, request, jsonify, session, render_template
 import json
-from flask_mysqldb import MySQL
+
 # utiliser mysql avec flask
 from flask_cors import CORS, cross_origin
 import os
@@ -44,7 +44,7 @@ Session(app)
 # session['firstname'] = ""
 # session['lastname'] = ""
 # session['password'] = ""
-mysql = MySQL(app)
+# mysql = MySQL(app)
 cors = CORS(app, resources={r"/*": {"origins": "*", "supports_credentials": True}})
 
 #fire base config
