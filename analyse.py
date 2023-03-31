@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import spacy
-import fr_core_news_md
 
-# nlp = spacy.load("fr_core_news_sm")
-nlp = fr_core_news_md.load()
+
+nlp = spacy.load("fr_core_news_sm")
+
 
 nlp = spacy.load("fr_core_news_sm")
 def analysefunc(content):

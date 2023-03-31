@@ -4,7 +4,7 @@ from io import StringIO
 from flask import Flask, request, jsonify, session, render_template
 import json
 
-# utiliser mysql avec flask
+
 from flask_cors import CORS, cross_origin
 import os
 import uuid 
@@ -367,6 +367,6 @@ def analyse():
 
    # Redirect to login page
 if __name__== "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
 
 
